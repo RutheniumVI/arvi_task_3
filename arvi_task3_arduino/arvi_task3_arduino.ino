@@ -17,7 +17,7 @@ void command_cb( const std_msgs::String & cmd_msg){
 }
 
 
-ros::Subscriber<std_msgs::String> sub("ledcontrol", command_cb);
+ros::Subscriber<std_msgs::String> sub("command", command_cb);
 
 void setup(){
   pinMode(7, OUTPUT);
